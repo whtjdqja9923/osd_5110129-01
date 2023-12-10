@@ -14,7 +14,7 @@ def z_score(x):
     return (x - x.mean())/x.std()
 
 df = pd.read_csv("./Sleep_Efficiency.csv", index_col='ID')
-df2 = pd.read_csv("./Sleep_health_and_lifestyle_dataset.csv", index_col='Person ID')
+# df2 = pd.read_csv("./Sleep_health_and_lifestyle_dataset.csv", index_col='Person ID')
 # print(df)
 
 df['z_Alcohol consumption'] = z_score(df['Alcohol consumption'])
